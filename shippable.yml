@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - 0.10.25
 
+# Services used by app
+services:
+  - postgres
+
 # For xunit-file module to put results in shippable folder
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
